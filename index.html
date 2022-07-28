@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Best of W" />
+    <meta name="author" content="Vander Meersche Y., Vardin V." />
+    
+    <!-- Website title -->
+    <title>Best of W</title>
+    <link id="favicon" rel="icon" href="images/icon.png" type="image/png" sizes="16x16">
+    
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui.min.css"/>
+    <script src="js/jquery-ui.min.js"></script>
+    
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Splide caroussel -->
+    <script src="js/splide.min.js"></script>
+    <link rel="stylesheet" href="css/splide.min.css">
+
+    
+    <!-- Custom Fonts -->
+    <link href="css/css2.css" rel="stylesheet">
+    <link href="css/css22.css" rel="stylesheet">
+
+    <!-- Font awesome -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/custom_features.css" rel="stylesheet" />
+
+    <!-- General scripts -->
+    <script>
+        function randomPage(){
+            var nb = Math.floor(Math.random() * 79) + 1;
+            splide.go(nb);
+        };
+
+        function goToPage(){
+            var nb2 = parseInt(document.getElementById("gopage").value)-1;
+            if (nb2 <= 1){
+                splide.go(0);
+            }
+            else if (nb2 <= 79){
+                splide.go(nb2);
+            }
+            else if (nb2 > 79){
+                splide.go(78);
+            }
+        };
+    </script>
+
+
+</head>
+
+
+<body class="d-flex flex-column min-vh-100">
+
+    <noscript>You need to enable JavaScript to run this page.</noscript>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-white fixed-top">
+        <div class="container pb-2" id="nav-container">
+
+            <a class="navbar-brand" href="index.html"><img src="images/w_logo.png" alt="Website logo" id="logo" style="transition: 0.4s;height:110px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" style="margin-top: 3px;margin-bottom: 2px">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive" style="margin: auto">
+                <ul class="navbar-nav ms-auto">
+                    <div>
+                        <button class="btn btn-light me-4" onclick="randomPage();">Random</button>
+                    </div>
+                    <div class="d-flex">
+                        <div>
+                            <input id="gopage" class="form-control me-2" type="search" placeholder="Go to page..." aria-label="Search">
+                        </div>
+                        <button class="btn btn-light"  onclick="goToPage();">Go</button>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Page Content -->
+
+    <div class="container mt-auto">
+        <section class="splide">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-1 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Comique sans MS.</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#01</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-2 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Symbole - Syntasse</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#02</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-3 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Pied - Paspied</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#03</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-4 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Poubelle - Poulaid</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#04</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-5 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Rideau de fer - Rideau de douche</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#05</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-1 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Imprimante - Déprimante</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#06</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-2 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Les malsains ont des tétons.</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#07</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-3 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">S'éffriter pour faire des frites.</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#08</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-4 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Hello Kitty - Good by Kitty</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#09</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-5 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Il rigolait demi-écrémé.</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#10</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-1 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Des vertes et des pas mûres - Des vertes et des pas cloisons</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#11</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-2 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Dépêcher - Dépoiriers</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#12</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-3 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Il demande son avocat, ou son concombre.</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#13</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-4 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Dieu dit à Laure de dire "nateur"... Et l'ordinateur !</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#14</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-5 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Castro est un bon chien... Il est Fidel Castro.</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#15</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-1 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Thématique - Cafématique</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#16</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-2 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Théo - Thébas</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#17</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-3 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Cuba - Cuhaut</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#18</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-4 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Bras de fer - Bras de chaire</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#19</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-5 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Oxymore - Oxyvivant</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#20</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-1 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Manteau - Mantard</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#21</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-2 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Vouvray - Voufaux</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#22</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-3 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Candy'Up - Gandi'Up</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#23</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-4 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Cerf-volant - Cerveau rapide</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#24</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-5 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Par coeur - Par rein</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#25</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-1 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Scène de théatre - Loire de théatre</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#26</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-2 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">François Hollande - François Pays-bas</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#27</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-3 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Passer un marché - Passer un courir</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#28</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-4 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Benelux - Benetnuts</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#29</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-5 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Cette chose - Huit choses</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#30</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-1 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Un clavier "azerty" - Un Christian "azerty"</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#31</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-2 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Tabouret - Tabousobre</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#32</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-3 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Fantastique - Cocastique</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#33</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-4 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Ce steak est bien caché.</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#34</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-5 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Les Tours Jumelles - Les Blois Jumelles</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#35</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-1 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Taliban - Talichaise</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#36</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-2 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Raser - Souriser</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#37</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-3 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Il faut le faire - Il faut l'acier</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#38</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-4 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Charles De Gaulle - Charles Trois Gaulle</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#39</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-5 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Ainsi - Deuxsi</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#40</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-1 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Jeu de rôle - Jeu drole</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#41</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-2 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Est-ce que Charles De Gaulle était fort au football ?</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#42</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-3 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Nicole - Ni clou ni vis</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#43</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-4 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Distrait - Onzetrait</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#44</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-5 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Echec et Mat - Echec et Français</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#45</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-1 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Indice de Développement Humain - Preuve de développement humain</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#46</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-2 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Humain - Hupied</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#47</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-3 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">C'est plus facile de faire un régime sans sel que du vélo sans selle.</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#48</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-4 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Les droits de l'Homme - Les gauches de l'Homme</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#49</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-5 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Je doute - Je d'avril</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#50</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-1 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Univers - Unibleu</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#51</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-2 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Râpe à fromage - Rock à fromage</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#52</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-3 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Etude de cas - Etude de L</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#53</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-4 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Il perd son sang - Il perd son cent-un</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#54</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-5 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Il t'aime - Il thème</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#55</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-1 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Culturel - Culturlui</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#56</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-2 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Tu m'énerves à un point... Un point virgule ou d'exclamation ?</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#57</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-3 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Compétitivité - Compégrosminetivité</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#58</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-4 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Il s'étend - Il huitend</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#59</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-5 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Ambulance - Amburattrape</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#60</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-1 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Daphné - Daphnoreille</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#61</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-2 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Sasha - Sachien</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#62</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-3 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Guitare - Guitôt</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#63</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-4 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Chaussure - Froidssure</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#64</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-5 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Lunette - Soleillette</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#65</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-1 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Tableau - Mableau</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#66</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-2 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Victor - Vicraison</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#67</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-3 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Guillaume - Guillampère</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#68</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-4 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Etre bio - Etre moche</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#69</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-5 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Laurène - Argentène</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#70</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-1 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Cabanon - Cabaoui</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#71</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-2 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Je tente le coup - J'oncle le coup</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#72</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-3 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Complément - Complévérité</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#73</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-4 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Information - Infaiblation</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#74</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-5 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Je dis - Vendredi</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#75</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-1 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Continu - Contihabillé</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#76</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-2 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Je te parie - Je te Tours</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#77</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-3 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Les espaces verts - Les tabulations verts</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#78</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="cards">
+                        <div class="card card-4 d-flex flex-column">
+                            <div class="card__icon"><h4 style="opacity: 0;">#</h4></div>
+                            <div class="d-flex justify-content-center h-100">
+                                <h2 class="card__title align-self-center">Le niveau - Le nivache</h2>
+                            </div>
+                            <div>
+                                <div class="card__icon float-end"><h4 style="width:min-content;">#79</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- Add the progress bar element -->
+                <div class="my-slider-progress">
+                    <div class="my-slider-progress-bar"></div>
+                </div>
+        </section>
+    </div>
+
+
+<!-- Footer -->
+<div class="footer container mt-auto">
+    <div id="footer-container">
+        <hr>
+    </div>
+
+    <footer class="bg-white text-dark pb-4 pt-2">
+        <p class="m-0 text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-c-circle" viewBox="0 0 16 16">
+                <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512Z"/>
+              </svg> Vander Meersche Y., Vardin V.
+        </p>
+    </footer>
+</div>
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+
+
+<script>
+
+    splide = new Splide(".splide", {type:"loop", height:"auto", 
+                                        pagination: false, keyboard:"global"}).mount();
+
+</script>
+
+
+</body>
+</html>
